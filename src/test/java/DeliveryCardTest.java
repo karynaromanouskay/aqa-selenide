@@ -3,12 +3,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
-import static com.codeborne.selenide.Selectors.withText;
-import static com.codeborne.selenide.Selenide.*;
-
-
+import java.
 public class DeliveryCardTest {
 
     private String dateGenerate(int addDays, String dateFormat) {
