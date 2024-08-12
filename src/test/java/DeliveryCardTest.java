@@ -3,7 +3,12 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 import java.time.LocalDate;
-import java.
+import java.time.format.DateTimeFormatter;
+
+import static com.codeborne.selenide.Selectors.withText;
+import static com.codeborne.selenide.Selenide.*;
+
+
 public class DeliveryCardTest {
 
     private String dateGenerate(int addDays, String dateFormat) {
@@ -15,8 +20,8 @@ public class DeliveryCardTest {
 
         $("[data-test-id='city'] input").setValue("Тамбов");
         $("[data-test-id=date] input").doubleClick();
-        $("[data-test-id='date'] input").sendKeys(dateGenerate(21, "dd.MM.yyyy"));
-        $("[data-test-id='name'] input").setValue("Романовская Карина Владимировна");
+        $("[data-test-id='date'] input").sendKeys(dateGenerate(24, "dd.MM.yyyy"));
+        $("[data-test-id='name'] input").setValue("Ромаовская Карина Владимировна");
         $("[data-test-id='phone'] input").setValue("+79163305338");
         $("[data-test-id=agreement]").click();
 
