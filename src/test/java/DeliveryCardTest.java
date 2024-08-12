@@ -20,9 +20,9 @@ public class DeliveryCardTest {
 
         $("[data-test-id='city'] input").setValue("Тамбов");
         $("[data-test-id=date] input").doubleClick();
-        $("[data-test-id='date'] input").sendKeys(dateGenerate(24, "dd.MM.yyyy"));
-        $("[data-test-id='name'] input").setValue("Ромаовская Карина Владимировна");
-        $("[data-test-id='phone'] input").setValue("+79163305338");
+        $("[data-test-id='date'] input").sendKeys(dateGenerate(17, "dd.MM.yyyy"));
+        $("[data-test-id='name'] input").setValue("Полежаева Анна-Мария");
+        $("[data-test-id='phone'] input").setValue("+79202360184");
         $("[data-test-id=agreement]").click();
 
         $$("button").find(Condition.exactText("Забронировать")).click();
